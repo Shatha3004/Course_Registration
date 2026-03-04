@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page */
+.students-wrapper {
+  min-height: 100vh;
+  padding: 30px 15px;
+  background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+}
+
+.students-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* Table container (for mobile scroll) */
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Table */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+.students-table thead {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+}
+
+.students-table th,
+.students-table td {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Body rows */
+.students-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background 0.2s ease;
+}
+
+.students-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* No data */
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .students-table th,
+  .students-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

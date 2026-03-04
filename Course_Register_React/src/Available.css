@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page */
+.course-wrapper {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+}
+
+.course-wrapper h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+/* Grid layout */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* Card */
+.course-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover */
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+/* Card content */
+.course-card h3 {
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  margin: 6px 0;
+  color: #374151;
+  font-size: 14px;
+}
+
+/* Button */
+.enroll-btn {
+  margin-top: 15px;
+  padding: 10px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.enroll-btn:hover {
+  background: linear-gradient(135deg, #4338ca, #6d28d9);
+  transform: scale(1.03);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .course-wrapper {
+    padding: 25px 15px;
+  }
+}
